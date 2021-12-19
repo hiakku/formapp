@@ -1,0 +1,57 @@
+.commonModal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+}
+.modalBg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modalInner {
+  max-width: 50rem;
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  box-shadow: 0 1px 12px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 0.9375rem;
+  background: #fff;
+  padding: 4rem 3rem 0 3rem;
+}
+
+.buttonContainer {
+  position: absolute;
+  bottom: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 2rem;
+  width: 100%;
+  right: 3rem;
+}
+.buttonsModal {
+  min-width: 7rem;
+  display: flex;
+  border-radius: 15px;
+  background: #6495ed;
+  height: 2rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+.cancel {
+  background: #d2042d;
+}
+.errorMsg {
+  margin-top: 1rem;
+  font-size: 0.7rem;
+  color: red;
+}
